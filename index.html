@@ -17,7 +17,112 @@
 </head>
 
 <body>
-  
+  <div class="root">
+    <h1>Music Player</h1>
+
+    <main class="app">
+      <div class="content">
+        <div class="handling">
+          <div class="handling-sound" title="Volume">
+            <svg class="icon-sound">
+              <use xlink:href="./assets/images/sprite.svg#sound"></use>
+            </svg>
+
+            <div class="volume">
+              <input min="0" max="1" step="0.1" value="0.5" type="range" name="volume" class="controls-volume" />
+            </div>
+          </div>
+
+          <div class="handling-repeat" title="Repeat">
+            <svg class="icon-repeat">
+              <use xlink:href="./assets/images/sprite.svg#repeat"></use>
+            </svg>
+          </div>
+
+          <div class="handling-shuffle" title="Shuffle">
+            <svg class="icon-shuffle">
+              <use xlink:href="./assets/images/sprite.svg#shuffle"></use>
+            </svg>
+          </div>
+
+        </div>
+        <div class="current">
+          <div class="current-image" style="background-image: url(./assets/images/beat1.jpg);"></div>
+
+          <div class="current-info">
+            <div class="current-info__top">
+              <div class="current-info__titles">
+                <h2 class="current-info__group">Король и шут</h2>
+                <h3 class="current-info__track">Поиск</h3>
+              </div>
+
+              <div class="current-info__year">2023</div>
+            </div>
+
+            <div class="controls">
+              <div class="controls-buttons">
+                <button class="controls-button" controls-prev>
+                  <svg class="icon-arrow">
+                    <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+
+                <button class="controls-button" controls-play>
+                  <svg class="icon-pause">
+                    <use xlink:href="./assets/images/sprite.svg#pause"></use>
+                  </svg>
+                  <svg class="icon-play">
+                    <use xlink:href="./assets/images/sprite.svg#play"></use>
+                  </svg>
+                </button>
+
+                <button class="controls-button" controls-next>
+                  <svg class="icon-arrow">
+                    <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="controls-progress">
+                <div class="progress">
+                  <div class="progress-current" style="width: 80%;"></div>
+                </div>
+
+                <div class="timeline">
+                  <span class="timeline-start">00:42</span>
+                  <span class="timeline-end">42:42</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <p class="last-title">All tracks</p>
+
+          <div class="items">
+            <div class="item">
+              <div class="item-image" style="background-image: url(./assets/images/beat1.jpg);"></div>
+
+              <div class="item-titles">
+                <h2 class="item-group">Tra La la</h2>
+                <h3 class="item-track">Tra La la</h3>
+              </div>
+
+              <p class="item-duration">42:42</p>
+              <p class="item-genre">Pop</p>
+
+              <button class="item-play">
+                <svg class="icon-play">
+                  <use xlink:href="./assets/images/sprite.svg#play"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
